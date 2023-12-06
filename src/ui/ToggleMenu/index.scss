@@ -1,0 +1,48 @@
+.toggleMenu {
+    height: 1.5em;
+    line-height: 1.5em;
+    width: auto;
+    .toggleMenu-title {
+        cursor: pointer;
+        width: min-content;
+        margin-right: auto;
+        position: relative;
+        padding-left: 0.5em;
+        padding-right: 1.2em;
+    }
+    .toggleMenu-title::after {
+        content: "expand_more";
+        position: absolute;
+        top: 0.15em;
+        right: 0;
+        height: inherit;
+        font-size: inherit;
+        line-height: inherit;
+        font-family: "Material Symbols Outlined";
+    }
+    .toggleMenu-option {
+        position: absolute;
+        height: 0;
+        overflow: hidden;
+        white-space: nowrap;
+        transition: height 0.5s;
+        a {
+            outline: none;
+            display: block;
+            text-decoration: none;
+            padding: 0.25em 0.5em;
+            height: 1.5em;
+            line-height: 1.5em;
+            background-color: #FFF;
+        }
+        a:visited {
+            color: inherit;
+        }
+    }
+}
+
+.toggleMenu:hover {
+    .toggleMenu-option {
+        height: calc(2em * var(--rows));
+    }
+}
