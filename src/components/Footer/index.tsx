@@ -12,7 +12,7 @@ export default function Footer(): React.ReactElement {
                     <img src={logo} alt="logo" />
                 </div>
                 <a href="mailto:GDSC.club@gs.ncku.edu.tw">GDSC.club@gs.ncku.edu.tw</a>
-                <p>國立成功大學 台灣台南市東區大學路1號</p>
+                <p>國立成功大學 哈囉你好嗎台灣台南市東區大學路1號</p>
                 <div className="footer-iconBar">
 
                 </div>
