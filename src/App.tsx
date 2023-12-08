@@ -1,19 +1,19 @@
 import React from "react";
-import { Router, BrowserRouter } from "react-router-dom";
+import { Routes, BrowserRouter ,Route } from "react-router-dom";
 
 import NavigateBar from "./components/NavigateBar";
 import Footer from "./components/Footer";
+import Event from "./components/EventPage";
 
 export default class App extends React.Component {
     render(): React.ReactNode {
         return (
             <div id="app">
-                <p>hello</p>
                 <BrowserRouter>
                     <NavigateBar />
-                    {/* <Router>
-
-                    </Router> */}
+                    <Routes>
+                        <Route path="/events" element={<Event />} />
+                    </Routes>
                     <Footer />
                 </BrowserRouter>
             </div>
