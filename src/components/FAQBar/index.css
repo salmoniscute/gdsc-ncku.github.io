@@ -1,0 +1,41 @@
+.faq {
+    margin: 0 auto;
+    width: 774px;
+}
+.faq h2 {
+    font-size: 24px;
+    font-weight: normal;
+}
+.faq p {
+    font-size: 20px;
+    max-height: 0;
+    overflow: hidden;
+    line-height: 2rem;
+    margin: 0 20px;
+    transition: max-height 1s;
+}
+.faq .show {
+    display: block;
+    max-height: 200px;
+}
+
+.faq .rotate-icon {
+    font-size: 24px;
+    transition: transform 1s ease; 
+}
+  
+.faq .rotated {
+    transform: rotate(180deg);
+}
+.faq .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+}
+.faq a{
+    color:#4386F5;
+    text-decoration-line: underline;
+    cursor: pointer;
+}
