@@ -8,6 +8,7 @@ export default class App extends React.Component {
     render(): React.ReactNode {
         return (
             <div id="app">
+                <p>hello</p>
                 <BrowserRouter>
                     <NavigateBar />
                     {/* <Router>
