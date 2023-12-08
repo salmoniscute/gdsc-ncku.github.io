@@ -23,4 +23,7 @@
     a:visited {
         color: inherit
     }
+    .toggleMenu:last-child {
+        min-width: calc(17em - 5vw);
+    }
 }

@@ -1,9 +1,10 @@
 import React from "react";
-import { Router, BrowserRouter } from "react-router-dom";
+import { Routes, BrowserRouter ,Route } from "react-router-dom";
 
 import NavigateBar from "./components/NavigateBar";
 import Footer from "./components/Footer";
 import FAQBar from "./components/FAQBar";
+import Event from "./components/EventPage";
 
 export default class App extends React.Component {
     render(): React.ReactNode {
@@ -11,9 +12,9 @@ export default class App extends React.Component {
             <div id="app">
                 <BrowserRouter>
                     <NavigateBar />
-                    {/* <Router>
-
-                    </Router> */}
+                    <Routes>
+                        <Route path="/events" element={<Event />} />
+                    </Routes>
                     <FAQBar />
                     <Footer />
                 </BrowserRouter>
