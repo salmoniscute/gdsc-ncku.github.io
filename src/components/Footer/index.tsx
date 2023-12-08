@@ -34,7 +34,6 @@ export default function Footer(): React.ReactElement {
                     rel="noreferrer"
                 >Code of Conduct</a>
                 <h6>讓改變在校園裡發生！</h6>
-                <p>hello leaf!</p>
             </div>
         </div>
     );
