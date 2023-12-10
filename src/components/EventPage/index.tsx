@@ -17,6 +17,7 @@ export default function Event(): React.ReactElement {
                 ></iframe>
 
             </div>
+            <h5 className="bold">年度活動</h5>
 
 
         </div>

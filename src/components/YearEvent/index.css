@@ -1,0 +1,5 @@
+#yearEvent{
+    --margin: calc((100vw - min(90vw, 1200px)) / 2);
+    width: calc(100vw - 2 * var(--margin));
+    margin: 4.7rem var(--margin);
+}
