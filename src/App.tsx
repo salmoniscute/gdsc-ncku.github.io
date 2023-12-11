@@ -3,8 +3,8 @@ import { Routes, BrowserRouter ,Route } from "react-router-dom";
 
 import NavigateBar from "./components/NavigateBar";
 import Footer from "./components/Footer";
-import FAQBar from "./components/FAQBar";
 import Event from "./components/EventPage";
+import Home from "./components/HomePage"
 
 export default class App extends React.Component {
     render(): React.ReactNode {
@@ -13,9 +13,9 @@ export default class App extends React.Component {
                 <BrowserRouter>
                     <NavigateBar />
                     <Routes>
+                        <Route path="/" element={<Home />} />
                         <Route path="/events" element={<Event />} />
                     </Routes>
-                    <FAQBar />
                     <Footer />
                 </BrowserRouter>
             </div>

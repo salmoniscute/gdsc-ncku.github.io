@@ -7,6 +7,7 @@
 .calendar{
     display:flex;
     flex-direction: column;
+    margin-bottom: 5rem;
 }
 
 .calendar h5{

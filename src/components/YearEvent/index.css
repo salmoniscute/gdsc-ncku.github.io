@@ -1,0 +1,38 @@
+#yearEvent{
+    border-radius: 0.938rem;
+    width: 71.25rem;
+    height: 21.875rem;
+    background-size: cover;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+    position: relative;
+    margin-bottom: 6rem;
+}
+#yearEvent:hover {
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.5);
+    transition: 0.2s ease-in;
+    cursor: pointer;
+}
+
+#yearEvent p{
+    font-size: large;
+    color: white;
+}
+
+#yearEvent h6{
+    color: white;
+    margin-bottom: 0.5rem;
+    margin-top: 1.5rem;
+}
+
+.bannerInside{
+    width: 834px;
+    height: 160px;
+    border-radius: 5px;
+    position: absolute;
+    top: 175px;
+    left:20px;
+    background-color: #2B2B2BA1 ;
+    box-sizing: border-box;
+    padding-right: 3rem;
+    padding-left: 1rem;
+}

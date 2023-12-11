@@ -10,7 +10,9 @@ import "./index.scss";
 export default function NavigateBar(): React.ReactElement {
     return (
         <div id="navigateBar">
-            <img src={logo} alt="logo" />
+            <Link className="logo-image" to="/">
+                <img src={logo} alt="logo" />
+            </Link>
             <Link className="normal bold" to={"/events"}>Events</Link>
             <Link className="normal bold" to={"/projects"}>Projects</Link>
             <ToggleMenu
