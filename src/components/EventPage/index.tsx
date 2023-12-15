@@ -1,5 +1,6 @@
 import React from "react";
 import { Router, BrowserRouter } from "react-router-dom";
+
 import "./index.css";
 import YearEvent from "../YearEvent";
 import Presentation from "../../assets/banner/presentation_2023.jpg"
@@ -30,7 +31,6 @@ export default function Event(): React.ReactElement {
 
 
         </div>
-        
         
     );
 }
