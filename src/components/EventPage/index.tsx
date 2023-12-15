@@ -4,7 +4,7 @@ import RecentEvent from "../Recent_Event";
 
 export default function Event(): React.ReactElement {
     return (
-        <div>hi
+        <div>
             <RecentEvent/>
         </div>
         
