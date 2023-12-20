@@ -23,7 +23,7 @@ export default function Event(): React.ReactElement {
 
             </div>
             <h5 className="bold">年度活動</h5>
-            <YearEvent image={Presentation} borderColor="#FAAB00" name="成果發表會" infor="第一屆NCKU GDSC的成果發表會在國立成功大學總圖書館盛大舉辦。匯集NLP, Flutter, 演算法視覺化, 網頁程式開發等多樣主題。"/>
+            <YearEvent image={Presentation} borderColor="#FAAB00" name="成果發表會" infor="第一屆NCKU GDSC的成果發表會在國立成功大學總圖書館盛大舉辦。匯集NLP, Flutter, 演算法視覺化, 網頁程式開發等多樣主題。" />
             <YearEvent image={SolutionChallenge} borderColor="#EA4336" name="Solution Challenge" infor="第一屆NCKU GDSC的成果發表會在國立成功大學總圖書館盛大舉辦。
                 匯集NLP, Flutter, 演算法視覺化, 網頁程式開發等多樣主題。" />
             <YearEvent image={StudyJam} borderColor="#34A852" name="Cloud Study Jam" infor="第一屆NCKU GDSC的成果發表會在國立成功大學總圖書館盛大舉辦。
@@ -31,6 +31,6 @@ export default function Event(): React.ReactElement {
 
 
         </div>
-        
+
     );
 }

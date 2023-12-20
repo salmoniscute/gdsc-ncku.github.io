@@ -5,20 +5,20 @@ import NavigateBar from "./components/NavigateBar";
 import Footer from "./components/Footer";
 import Event from "./components/EventPage";
 import Home from "./components/HomePage"
+import ProjectsPage from "./components/ProjectsPage";
 
-export default class App extends React.Component {
-    render(): React.ReactNode {
-        return (
-            <div id="app">
-                <BrowserRouter>
-                    <NavigateBar />
-                    <Routes>
-                        <Route path="/" element={<Home />} />
-                        <Route path="/events" element={<Event />} />
-                    </Routes>
-                    <Footer />
-                </BrowserRouter>
-            </div>
-        );
-    }
+export default function App(): React.ReactElement {
+    return (
+        <div id="app">
+            <BrowserRouter>
+                <NavigateBar />
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/events" element={<Event />} />
+                    <Route path="/projects" element={<ProjectsPage />} />
+                </Routes>
+                <Footer />
+            </BrowserRouter>
+        </div>
+    );
 }
