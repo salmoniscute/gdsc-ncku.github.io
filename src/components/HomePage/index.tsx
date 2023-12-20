@@ -6,10 +6,8 @@ import FAQBar from "../FAQBar";
 export default function Home(): React.ReactElement {
     return (
         <div>
-            <FAQBar/>
+            <FAQBar />
 
         </div>
-        
-        
     );
 }
