@@ -6,10 +6,14 @@ import YearEvent from "../YearEvent";
 import Presentation from "../../assets/banner/presentation_2023.jpg"
 import SolutionChallenge from "../../assets/banner/solution_challenge.png"
 import StudyJam from "../../assets/banner/study_jam.png"
+import RecentEvent from "../Recent_Event";
 
 export default function Event(): React.ReactElement {
     return (
         <div id="event">
+            <div>
+                <RecentEvent/>
+            </div>
             <div className="calendar">
                 <h5 className="bold">行事曆</h5>
                 <iframe
