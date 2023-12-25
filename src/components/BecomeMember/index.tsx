@@ -23,7 +23,7 @@ export default function Home(): React.ReactElement {
                 "Google 紀念禮品",
                 "與 Google 工程師以及其他 GDSC 社群交流的機會"
             ],
-            More : "更多詳情請參考<a href='https://developers.google.com/community/gdsc/leads?hl=en' target='blank' >官方申請網站</a>，或是參加台灣各地區的 Lead 申請實體說明會。"
+            More : "更多詳情請參考 <a href='https://developers.google.com/community/gdsc/leads?hl=en' target='blank' >官方申請網站</a>，或是參加台灣各地區的 Lead 申請實體說明會。"
         },
         {
             Position : "Core member",
@@ -43,7 +43,7 @@ export default function Home(): React.ReactElement {
                 "從零到有開發軟體產品，豐富自身經歷與作品",
                 "參與社員限定的活動與課程"
             ],
-            More : "更多詳情請關注 GDSC NCKU<a href='https://www.facebook.com/gdscncku/' target='blank' >Faceboook</a>、<a href='https://www.instagram.com/gdsc.ncku/' target='blank' >Instagram</a>或<a href='https://discord.com/invite/3AgWYcZXZm' target='blank' >Discord</a>，並參加每年的核心成員招募說明會。"
+            More : "更多詳情請關注 GDSC NCKU <a href='https://www.facebook.com/gdscncku/' target='blank' >Faceboook</a>、<a href='https://www.instagram.com/gdsc.ncku/' target='blank' >Instagram</a> 或 <a href='https://discord.com/invite/3AgWYcZXZm' target='blank' >Discord</a>，並參加每年的核心成員招募說明會。"
         },
         {
             Position : "Team member",
@@ -60,7 +60,7 @@ export default function Home(): React.ReactElement {
                 "從零到有開發軟體產品，豐富自身經歷與作品",
                 "參與社員限定的活動與課程"
             ],
-            More : "更多詳情請關注 GDSC NCKU<a href='https://www.facebook.com/gdscncku/' target='blank' >Faceboook</a>、<a href='https://www.instagram.com/gdsc.ncku/' target='blank' >Instagram</a>或<a href='https://discord.com/invite/3AgWYcZXZm' target='blank' >Discord</a>，並參加每年的社員招募說明會。"
+            More : "更多詳情請關注 GDSC NCKU <a href='https://www.facebook.com/gdscncku/' target='blank' >Faceboook</a>、<a href='https://www.instagram.com/gdsc.ncku/' target='blank' >Instagram</a> 或 <a href='https://discord.com/invite/3AgWYcZXZm' target='blank' >Discord</a>，並參加每年的社員招募說明會。"
         }
     ];
     const posClass = ["Lead", "Core", "Team"]
@@ -79,7 +79,7 @@ export default function Home(): React.ReactElement {
                         <li>職責：<ul>{item.Responsibility.map((item) =>(<li>{item}</li>))}</ul></li>
                         <li>福利：<ul>{item.Welfare.map((item) =>(<li>{item}</li>))}</ul></li>
                     </ul>
-                    {item.More}
+                    <div dangerouslySetInnerHTML={{ __html: item.More }} />
                 </div>
             </div>
           ))  
