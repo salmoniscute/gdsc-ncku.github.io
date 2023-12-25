@@ -1,7 +1,7 @@
 .recent-event-block {
     height: 327px;
     width: 1081px;
-    background-color: #ea9494;
+    background-color: #ffffff;
     display: flex;
     align-content: center;
     flex-direction: row;
@@ -17,10 +17,10 @@
     height: 55px;
     top: 410px;
     left: 534.5px;
-    background-color: #4386f5;
-    color: #ffffff;
-    border-radius: 8px;
-    border: 0;
+    background-color: #4386F5;
+    color : #ffffff; 
+    border-radius: 8px; 
+    border:0;
 }
 .addtocalendar {
     font-family: Noto Sans TC;
@@ -46,7 +46,6 @@
     font-weight: 500;
     line-height: 22px;
     letter-spacing: 0.1em;
-    text-align: center;
 
     height: 39px;
     top: 138px;
@@ -56,6 +55,7 @@
     margin-top: 0;
     margin-right: 20px;
     display: inline-block;
+    padding-top: 7px;
 }
 
 .topic {
@@ -132,6 +132,6 @@
 .content-block {
     display: flex;
     flex-direction: column;
-    margin-right: 0;
+    margin-left: 60px;
     right: 50%;
 }
