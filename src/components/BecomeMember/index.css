@@ -1,0 +1,44 @@
+#aboutBot {
+    display: flex;
+    flex-direction: column;
+    --margin: calc((100vw - min(90vw, 1200px)) / 2);
+    width: calc(100vw - 2 * var(--margin));
+    margin: 4.7rem var(--margin);
+    margin-top: 0%;
+    margin-bottom: 0%;
+
+    img {
+        width: 1200px;
+        height: 448px;
+     } 
+    .title {
+        text-align: left;
+        font-weight: 700;
+        font-size: 32px;
+        color: #1A1A1C;
+        line-height: 46.34px;
+      }
+    .Lead  {
+        color: #EA4336;
+    }
+    .Core {
+        color: #34A852;
+    }
+    .Team {
+        color: #FAAB00;
+    }
+    .content {
+        text-align: left;
+        font-weight: 400;
+        font-size: 20px;
+        color: #1A1A1C;
+        line-height: 28.96px;
+        margin-top: 2%;
+        margin-bottom: 2%;
+      }
+    li {
+        list-style-type: disc;
+    }
+  }
+
+
