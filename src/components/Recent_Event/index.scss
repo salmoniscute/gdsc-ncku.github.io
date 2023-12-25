@@ -6,7 +6,7 @@
     align-content: center;
     flex-direction: row;
 }
-.join {   
+.join {
     font-family: Noto Sans TC;
     font-size: 16px;
     font-weight: 700;
@@ -21,9 +21,6 @@
     color : #ffffff; 
     border-radius: 8px; 
     border:0;
-    margin-top: 49px;
-    margin-right: 30px;
-
 }
 .addtocalendar {
     font-family: Noto Sans TC;
@@ -37,13 +34,13 @@
     top: 410px;
     left: 534.5px;
     background-color: #ffffff;
-    border-color: #4386F5;
-    color: #4386F5;
-    border: 2px solid #4386F5;
-    border-radius: 8px; 
+    border-color: #4386f5;
+    color: #4386f5;
+    border: 2px solid #4386f5;
+    border-radius: 8px;
 }
 
-.tag{
+.tag {
     font-family: Noto Sans TC;
     font-size: 15px;
     font-weight: 500;
@@ -54,10 +51,10 @@
     top: 138px;
     left: 364.5px;
     border-radius: 42px;
-    border: 2px solid #676C72;
+    border: 2px solid #676c72;
     margin-top: 0;
     margin-right: 20px;
-    display:inline-block;
+    display: inline-block;
     padding-top: 7px;
 }
 
@@ -75,7 +72,6 @@
     color: #242323;
     margin-top: 0;
     margin-bottom: 0;
-
 }
 
 .time {
@@ -85,7 +81,7 @@
     line-height: 23px;
     letter-spacing: 0.1em;
     text-align: left;
-    color: #2F2F2F;
+    color: #2f2f2f;
     margin-top: 0;
     margin-bottom: 0;
 }
@@ -97,7 +93,7 @@
     line-height: 23px;
     letter-spacing: 0.1em;
     text-align: left;
-    color: #2F2F2F;
+    color: #2f2f2f;
     margin-top: 0;
     margin-bottom: 0;
 }
@@ -113,7 +109,7 @@
     line-height: 28px;
     letter-spacing: 0.1em;
     text-align: left;
-    color: #5F6367;
+    color: #5f6367;
     margin-top: 0;
     margin-bottom: 0;
 }
@@ -125,13 +121,12 @@
     left: 59.5px;
     border-radius: 110px;
     position: relative;
-    top: 50%;  
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 .avatar-block {
-    display:inline-block;
-    
+    display: inline-block;
 }
 
 .content-block {

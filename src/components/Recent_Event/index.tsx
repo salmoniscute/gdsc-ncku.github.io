@@ -1,6 +1,7 @@
-import React ,{useEffect, useState}from 'react';
+import React, { useState, useEffect } from 'react';
 import axios from "axios";
 import "./index.scss";
+export default function RecentEvent(): React.ReactElement {
 
 export default function RecentEvent(): React.ReactElement {
     let group_id = 1846;
@@ -37,7 +38,7 @@ export default function RecentEvent(): React.ReactElement {
         window.open(ref)
       };
 
-    return(
+    return (
         <div id="recent-event">
             <div className='recent-event-block'>
                 <div className='avatar-block'>

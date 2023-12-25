@@ -1,0 +1,187 @@
+#projects {
+    // width: 90vw;
+    // max-width: 1200px;
+    width: 70rem;
+    margin: auto;
+    .selector {
+        display: flex;
+        gap: 2em;
+        align-items: center;
+        div {
+            width: 11.5rem;
+            height: 3.5rem;
+            line-height: 3.5rem;
+            text-align: center;
+            color: #4386F5;
+            border: 2px solid #4386F5;
+            border-radius: 1.75rem;
+            transition: background-color 0.5s, color 0.5s;
+            user-select: none;
+            cursor: pointer;
+        }
+        div[data-selected="true"] {
+            color: #FFF;
+            background-color: #4386F5;
+        }
+    }
+    .banner {
+        position: relative;
+        width: calc(100% - 4rem);
+        height: 23.5rem;
+        margin: 3.4rem 0;
+        padding: 2rem;
+        color: #FFF;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        gap: 0.5rem;
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: block;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 1.25rem;
+            border-bottom: 5px solid #4386F5;
+            z-index: -1;
+        }
+        h5 {
+            margin: 0;
+        }
+        div {
+            width: 55%;
+        }
+    }
+    .works {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 6rem 0;
+        width: 100%;
+        img {
+            display: block;
+            object-fit: contain;
+            object-position: center;
+            width: 30rem;
+            border-radius: 1rem;
+            cursor: pointer;
+            transition: transform 0.5s;
+        }
+        img:hover {
+            transform: translateY(-0.5rem);
+        }
+    }
+    .selectedWork {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100vw;
+        opacity: 0%;
+        background-color: #2228;
+        pointer-events: none;
+        transition: opacity 0.5s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .box {
+            position: relative;
+            width: 65rem;
+            background-color: #FFF;
+            padding: 5rem 4rem 6rem 5rem;
+            border-radius: 1rem;
+            overflow: hidden;
+            transform: translateY(-5vh);
+            transition: transform 0.5s;
+            h5 {
+                margin: 0;
+            }
+            .authors {
+                margin: 0.5em 0;
+            }
+            .content {
+                display: flex;
+                height: 21rem;
+                gap: 1rem;
+                .intro {
+                    flex: 4;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1.2rem;
+                    .tags {
+                        display: flex;
+                        gap: 1rem;
+                        font-weight: 500;
+                        .tag {
+                            height: 1.8rem;
+                            line-height: 1.8rem;
+                            padding: 0 1.5em;
+                            color: #4386F5;
+                            border: 1px solid #4386F5;
+                            border-radius: 0.9rem;
+                        }
+                    }
+                    .context {
+                        font-weight: 400;
+                    }
+                    .links {
+                        display: flex;
+                        gap: 1rem;
+                        margin-top: auto;
+                        font-weight: 500;
+                        a {
+                            display: flex;
+                            align-items: center;
+                            gap: 0.2em;
+                            height: 2.5rem;
+                            padding: 0 1.5em;
+                            border: 2px solid #676C72;
+                            border-radius: 1.25rem;
+                            color: #676C72;
+                            text-decoration: none;
+                            .ms {
+                                padding-top: 0.2em;
+                                font-size: 1.15em;
+                            }
+                        }
+                    }
+                }
+                .imgBlock {
+                    flex: 5;
+                    overflow: hidden;
+                    margin: auto;
+                    img {
+                        display: block;
+                        width: 100%;
+                        object-fit: cover;
+                        object-position: center;
+                    }
+                }
+            }
+            .close {
+                position: absolute;
+                top: 1.6rem;
+                right: 1.75rem;
+                height: 2.6rem;
+                width: 2.6rem;
+                line-height: 2.6rem;
+                text-align: center;
+                font-weight: 900;
+                font-size: 1.5rem;
+                border: 0.35rem solid #000;
+                border-radius: 50%;
+                cursor: pointer;
+            }
+        }
+    }
+    .selectedWork[data-show="true"] {
+        pointer-events: initial;
+        opacity: 100%;
+        .box {
+            transform: translateY(0);
+        }
+    }
+}
