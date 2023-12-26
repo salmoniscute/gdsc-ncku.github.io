@@ -12,7 +12,6 @@ export default function RecentEvent(): React.ReactElement {
     const [venue_address, setVenue_address] = useState(null);
     const [venue_city, setVenue_city] = useState(null);
     const [url, setUrl] = useState<string>('Initial Value');
-    const parse = require('html-react-parser').default;
     const client = axios.create({
     baseURL: "https://gdsc.community.dev/api/" 
     });
