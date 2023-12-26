@@ -3,7 +3,6 @@ import axios from "axios";
 import "./index.scss";
 export default function RecentEvent(): React.ReactElement {
 
-export default function RecentEvent(): React.ReactElement {
     let group_id = 1846;
     const [event_title, setEvent_title] = useState(null);
     const [description_short, setDescription_short] = useState(null);
