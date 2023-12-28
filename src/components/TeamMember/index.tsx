@@ -33,7 +33,7 @@ export default function TeamMember(): ReactElement {
                         />
                         <div className="member-data">
                             <p id="member-name">{member.name}</p>
-                            <p id="member-job-itle">{member.jobTitle}</p>
+                            <p id="member-job-title">{member.jobTitle}</p>
                             <p id="member-department">{member.department}</p>
                             <p id="member-introduction">
                                 {member.introduction}
