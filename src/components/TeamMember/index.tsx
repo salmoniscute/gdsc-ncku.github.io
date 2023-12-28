@@ -24,8 +24,8 @@ export default function TeamMember(): ReactElement {
             </div>
             <h2>成員介紹</h2>
             <div className="members">
-                {data[selectedYear].members.map((member) => (
-                    <div className="member-card">
+                {data[selectedYear].members.map((member, key) => (
+                    <div className={`member-card-${(key % 3).toString()}`}>
                         <img
                             className="member-photo"
                             src={member.photo}
