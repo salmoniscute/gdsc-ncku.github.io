@@ -7,6 +7,7 @@ import Event from "./components/EventPage";
 import Home from "./components/HomePage"
 import ProjectsPage from "./components/ProjectsPage";
 import BecomeMember from "./components/BecomeMember";
+import TeamMember from "./components/TeamMember";
 
 export default function App(): React.ReactElement {
     return (
@@ -17,6 +18,7 @@ export default function App(): React.ReactElement {
                     <Route path="/" element={<Home />} />
                     <Route path="/events" element={<Event />} />
                     <Route path="/projects" element={<ProjectsPage />} />
+                    <Route path="/teams" element={<TeamMember />} />
                     <Route path="/join" element={<BecomeMember />} />
                 </Routes>
                 <Footer />
