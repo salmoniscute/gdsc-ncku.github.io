@@ -38,6 +38,8 @@
     color: #4386f5;
     border: 2px solid #4386f5;
     border-radius: 8px;
+    margin-left: 25px;
+    margin-top: 55px;
 }
 
 .tag {
@@ -47,15 +49,20 @@
     line-height: 22px;
     letter-spacing: 0.1em;
 
-    height: 39px;
-    top: 138px;
-    left: 364.5px;
+    width: 203px;
+    height: 31px;
     border-radius: 42px;
     border: 2px solid #676c72;
     margin-top: 0;
     margin-right: 20px;
     display: inline-block;
-    padding-top: 7px;
+    padding-top: 8px;
+    padding-left: 30px;
+    vertical-align: baseline;
+}
+.tag-block{
+    margin-top: 0;
+    padding-top: 0;
 }
 
 .topic {
@@ -135,3 +142,4 @@
     margin-left: 60px;
     right: 50%;
 }
+

@@ -12,7 +12,7 @@ export default function Event(): React.ReactElement {
     return (
         <div id="event">
             <div>
-                <RecentEvent/>
+                <RecentEvent event_num={0}/>
             </div>
             <div className="calendar">
                 <h5 className="bold">行事曆</h5>
