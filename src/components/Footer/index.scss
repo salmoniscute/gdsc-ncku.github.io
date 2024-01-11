@@ -35,3 +35,16 @@
         }
     }
 }
+
+@media (max-aspect-ratio: 1/1) {
+    #footer {
+        align-items: flex-start;
+        flex-direction: column;
+        height: 15rem;
+        > div.footer-block:has(img) {
+            > *:not(:has(img)) {
+                padding-left: 0;
+            }
+        }
+    }
+}

@@ -28,8 +28,10 @@ export default function ProjectsPage(): ReactElement {
             </div>
             <div className="banner">
                 <img alt="banner" src={data[selectedYear].bannerUrl} />
-                <h5>{selectedYear.split("-")[1]} 年 成果發表會</h5>
-                <div className="normal">{data[selectedYear].overview}</div>
+                <div className="context">
+                    <h5>{selectedYear.split("-")[1]} 年 成果發表會</h5>
+                    <div className="normal">{data[selectedYear].overview}</div>
+                </div>
             </div>
             <h3>作品列表</h3>
             <div className="works">
