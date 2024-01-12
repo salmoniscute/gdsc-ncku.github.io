@@ -1,15 +1,15 @@
 #navigateBar {
+    position: relative;
     height: 6.25rem;
-    width: 90vw;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0.95rem 0;
+    width: calc(90vw - 1rem);
+    max-width: calc(1200px - 1rem);
+    margin: 0;
+    padding: 0.95rem max(5vw, calc(50vw - 600px));
     display: flex;
     align-items: center;
     gap: 2.5rem;
+    z-index: 1;
     .logo-image {
-        width: 40%;
-        // height: 80%;
         margin-right: auto;
         object-fit: contain;
         object-position: center;
@@ -25,5 +25,112 @@
     }
     .toggleMenu:last-child {
         min-width: calc(17em - 5vw);
+    }
+    @media (min-aspect-ratio: 1/1) {
+        .logo-image {
+            width: 40%;
+        }
+        .menu {
+            display: flex;
+            width: 60%;
+            align-items: center;
+            gap: 2.5rem;
+        }
+        .moblieMenu {
+            display: none;
+        }
+    }
+    @media (max-aspect-ratio: 1/1) {
+        height: 5rem;
+        .logo-image {
+            width: calc(80% - 2.5rem);
+            img {
+                max-height: 5rem;
+            }
+        }
+        .menu {
+            position: absolute;
+            width: calc(90vw - 1rem);
+            max-width: 1200px;
+            margin: 0;
+            padding: 0.95rem max(5vw, calc(50vw - 600px));
+            top: 100%;
+            left: 0;
+            background-color: #FFF;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            transition: opacity 0.5s;
+            .toggleMenu {
+                transition: margin 0.5s;
+            }
+            .toggleMenu[data-open=true] {
+                margin-bottom: calc(2em * var(--rows));
+            }
+            .toggleMenu:last-child[data-open=true] {
+                margin-bottom: calc(2em * (var(--rows) + 1));
+            }
+        }
+        .moblieMenu {
+            position: relative;
+            width: min(7.5vw, 5vh);
+            height: min(7.5vw, 5vh);
+        }
+        .moblieMenu::before,
+        .moblieMenu::after {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            font-family: "Material Symbols Outlined";
+            font-size: min(7.5vw, 5vh);
+            line-height: min(7.5vw, 5vh);
+            text-align: center;
+            transition: opacity 0.5s, transform 0.5s;
+        }
+        .moblieMenu::before {
+            content: "menu";
+            color: #5F6367;
+        }
+        .moblieMenu::after {
+            content: "close";
+            color: #000;
+        }
+    }
+}
+
+
+#navigateBar[data-menu=false] {
+    .moblieMenu::before {
+        opacity: 100%;
+        transform: rotate(0deg) scale(1);
+    }
+    .moblieMenu::after {
+        opacity: 0%;
+        transform: rotate(90deg) scale(0);
+    }
+    @media (max-aspect-ratio: 1/1) {
+        .menu {
+            opacity: 0;
+            pointer-events: none;
+        }
+    }
+}
+
+#navigateBar[data-menu=true] {
+    .moblieMenu::before {
+        opacity: 0%;
+        transform: rotate(-90deg) scale(0);
+    }
+    .moblieMenu::after {
+        opacity: 100%;
+        transform: rotate(0deg) scale(1);
+    }
+    @media (max-aspect-ratio: 1/1) {
+        .menu {
+            opacity: 100%;
+            pointer-events: initial;
+        }
     }
 }

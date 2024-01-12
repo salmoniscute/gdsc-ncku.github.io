@@ -19,6 +19,8 @@
         font-size: inherit;
         line-height: inherit;
         font-family: "Material Symbols Outlined";
+        transform: rotate(90deg);
+        transition: transform 0.5s;
     }
     .toggleMenu-option {
         position: absolute;
@@ -41,8 +43,23 @@
     }
 }
 
-.toggleMenu:hover {
-    .toggleMenu-option {
-        height: calc(2em * var(--rows));
+@media (min-aspect-ratio: 1/1) {
+    .toggleMenu:hover {
+        .toggleMenu-title::after {
+            transform: rotate(0);
+        }
+        .toggleMenu-option {
+            height: calc(2em * var(--rows));
+        }
+    }
+}
+@media (max-aspect-ratio: 1/1) {
+    .toggleMenu[data-open=true] {
+        .toggleMenu-title::after {
+            transform: rotate(0);
+        }
+        .toggleMenu-option {
+            height: calc(2em * var(--rows));
+        }
     }
 }

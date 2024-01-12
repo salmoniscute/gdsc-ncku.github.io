@@ -1,6 +1,5 @@
 #projects {
-    // width: 90vw;
-    // max-width: 1200px;
+    max-width: min(90vw, 1200px);
     width: 70rem;
     margin: auto;
     .selector {
@@ -26,15 +25,11 @@
     }
     .banner {
         position: relative;
-        width: calc(100% - 4rem);
-        height: 23.5rem;
+        width: calc(min(90vw, 1200px, 70rem) - 4rem);
+        min-height: calc((min(90vw, 1200px, 70rem)) / 3);
         margin: 3.4rem 0;
         padding: 2rem;
         color: #FFF;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        gap: 0.5rem;
         img {
             position: absolute;
             top: 0;
@@ -48,24 +43,35 @@
             border-bottom: 5px solid #4386F5;
             z-index: -1;
         }
-        h5 {
-            margin: 0;
-        }
-        div {
-            width: 55%;
+        .context {
+            position: absolute;
+            bottom: 2rem;
+            // left: 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            gap: 0.5rem;
+            width: 100%;
+            h5 {
+                margin: 0;
+            }
+            div {
+                width: 55%;
+            }
         }
     }
     .works {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        gap: 6rem 0;
+        gap: min(6rem, 6vw) 0;
         width: 100%;
         img {
             display: block;
             object-fit: contain;
             object-position: center;
-            width: 30rem;
+            // width: 30rem;
+            width: calc(50% - min(3rem, 6vw));
             border-radius: 1rem;
             cursor: pointer;
             transition: transform 0.5s;
@@ -89,6 +95,7 @@
         justify-content: center;
         .box {
             position: relative;
+            max-width: calc(min(90vw, 1200px) - 9rem);
             width: 65rem;
             background-color: #FFF;
             padding: 5rem 4rem 6rem 5rem;
@@ -126,6 +133,7 @@
                     }
                     .context {
                         font-weight: 400;
+                        overflow-y: auto;
                     }
                     .links {
                         display: flex;
@@ -182,6 +190,42 @@
         opacity: 100%;
         .box {
             transform: translateY(0);
+        }
+    }
+}
+
+@media (max-aspect-ratio: 1/1) {
+    #projects {
+        .banner .context {
+            position: static;
+            // bottom: 1rem;
+            // left: 1.5rem;
+            padding: 0.25rem;
+            background-color: #2B2B2BA0;
+            > div {
+                width: calc(100% + 0.5rem);
+            }
+        }
+        
+        .selectedWork > .box {
+            > .content {
+                flex-direction: column-reverse;
+                height: 29.5rem;
+                .intro {
+                    height: 16.5rem;
+                }
+                .imgBlock {
+                    height: 12rem;
+                    width: 100%;
+                    img {
+                        // display: block;
+                        object-fit: contain;
+                        object-position: left;
+                        height: 100%;
+                        margin-left: 0;
+                    }
+                }
+            }
         }
     }
 }
