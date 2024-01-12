@@ -1,5 +1,7 @@
 import { ReactElement, useState } from "react";
 
+import MemberPhotoWall from "../PhotoWall";
+
 import "./index.scss";
 
 import { data, Member } from "./teamMemberData";
@@ -10,6 +12,7 @@ export default function TeamMember(): ReactElement {
     );
     return (
         <div id="team-member">
+            <MemberPhotoWall />
             <div className="year-selector">
                 {Object.keys(data).map((year) => (
                     <div
