@@ -19,7 +19,7 @@ export default function NavigateBar(): React.ReactElement {
                 title="Teams"
                 titleClass="normal bold"
                 options={{
-                    "歷屆團隊成員": "",
+                    "歷屆團隊成員": "/members",
                     "如何加入成員": "/join",
                 }}
                 optionClass="normal"
