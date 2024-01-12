@@ -7,7 +7,6 @@ import Event from "./components/EventPage";
 import Home from "./components/HomePage"
 import ProjectsPage from "./components/ProjectsPage";
 import BecomeMember from "./components/BecomeMember";
-import MemberPhotoWall from "./components/MemberPage";
 
 export default function App(): React.ReactElement {
     return (
@@ -19,7 +18,6 @@ export default function App(): React.ReactElement {
                     <Route path="/events" element={<Event />} />
                     <Route path="/projects" element={<ProjectsPage />} />
                     <Route path="/join" element={<BecomeMember />} />
-                    <Route path="/members" element={<MemberPhotoWall />} />
                 </Routes>
                 <Footer />
             </BrowserRouter>
