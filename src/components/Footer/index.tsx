@@ -14,7 +14,7 @@ export default function Footer(): React.ReactElement {
                 <a href="mailto:GDSC.club@gs.ncku.edu.tw">GDSC.club@gs.ncku.edu.tw</a>
                 <p>國立成功大學 台灣台南市東區大學路1號</p>
                 <div className="footer-iconBar">
-
+                    {/* 忘記做了 先放著 */}
                 </div>
             </div>
             <div className="footer-block">
