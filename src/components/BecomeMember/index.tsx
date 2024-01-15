@@ -1,5 +1,5 @@
 import React from "react";
-import "./index.css";
+import "./index.scss";
 import OrganChart from '../../assets/banner/organization_chart.png'
 
 export default function Home(): React.ReactElement {

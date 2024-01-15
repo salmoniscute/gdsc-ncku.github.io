@@ -1,0 +1,31 @@
+#event{
+    max-width: min(90vw, 1200px);
+    width: 70rem;
+    margin: auto;
+
+    .calendar{
+        display:flex;
+        flex-direction: column;
+        margin-bottom: 5rem;
+        iframe{
+            min-height: calc((min(90vw, 1200px, 70rem))/1.2);
+        }
+    }
+}
+
+@media (max-aspect-ratio: 1/1){
+    #event{
+        .calendar{
+            margin-bottom: 3rem;
+            iframe{
+                height: calc((min(90vw, 1200px, 70rem))*1.1);
+            }
+        }
+        h5{
+            font-size: x-large;
+        }
+
+    }
+
+}
+
