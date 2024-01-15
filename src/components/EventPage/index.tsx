@@ -1,7 +1,7 @@
 import React from "react";
 import { Router, BrowserRouter } from "react-router-dom";
 
-import "./index.css";
+import "./index.scss";
 import YearEvent from "../YearEvent";
 import Presentation from "../../assets/banner/presentation_2023.jpg"
 import SolutionChallenge from "../../assets/banner/solution_challenge.png"
@@ -11,16 +11,16 @@ import RecentEvent from "../Recent_Event";
 export default function Event(): React.ReactElement {
     return (
         <div id="event">
+            <h5 className="bold">近期活動</h5>
             <div>
                 <RecentEvent event_num={0}/>
             </div>
+
+            <h5 className="bold">行事曆</h5>
             <div className="calendar">
-                <h5 className="bold">行事曆</h5>
                 <iframe
                     src="https://calendar.google.com/calendar/embed?src=c_c1282d53761f762b713c492f8a8b70ebf9aed7213851ad54871551d95df6e64f%40group.calendar.google.com&ctz=Asia%2FTaipei"
                     style={{ border: 0 }}
-                    width="1140"
-                    height="891"
                     frameBorder="0"
                     scrolling="no"
                 ></iframe>

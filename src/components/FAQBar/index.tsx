@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 
 import './index.css';
 
-import { IoIosArrowUp } from "react-icons/io";
 import { IoIosArrowDown } from "react-icons/io";
 
 export default function FAQBar(): React.ReactElement {
