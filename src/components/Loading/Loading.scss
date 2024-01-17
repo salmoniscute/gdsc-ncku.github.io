@@ -1,0 +1,41 @@
+.background {
+    background-color: #3E4046;
+    height: 100vh;
+
+}
+.back {
+    background-color: #3E4046;
+    max-width:480px;
+    margin-top:76px ;
+    margin-left: 64px;
+}
+
+.type {
+    //display: inline-block;
+    --n:63;
+
+    font-size: 24px;
+    font-family: Roboto Mono, monospace;
+    color:#0000;
+    font-weight: 400;
+    line-height: 31.65px;
+
+    word-break: keep-all;
+    padding: 0 0.1rem; //important to allow the caret to exist when the text is on pause
+    background:
+      linear-gradient(-90deg,#D9D9D9 4px,#0000 0) 0 0,
+      linear-gradient(#FFFFFF 0 0) 0 0;
+    background-size:calc(var(--n)*1ch) 200%;
+    -webkit-background-clip:padding-box,text;
+    background-clip:padding-box,text;
+    background-repeat:no-repeat;
+    animation: 
+      caret .4s infinite steps(1),   
+      deleteText calc(var(--n)*.08s) steps(var(--n)) forwards;
+  }
+  @keyframes deleteText{
+    from {background-size:0 200%}
+  }
+  @keyframes caret{
+    50% {background-position:0 -100%,0 0}
+  }
