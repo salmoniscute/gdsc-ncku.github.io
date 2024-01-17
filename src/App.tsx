@@ -1,5 +1,6 @@
 import React from "react";
 import { Routes, BrowserRouter ,Route } from "react-router-dom";
+import { useEffect, useState } from "react";
 
 import NavigateBar from "./components/NavigateBar";
 import Footer from "./components/Footer";
@@ -9,7 +10,16 @@ import ProjectsPage from "./components/ProjectsPage";
 import BecomeMember from "./components/BecomeMember";
 import TeamMember from "./components/TeamMember";
 
+import Loading from "./components/Loading/Loading"; // Loading page
+
 export default function App(): React.ReactElement {
+    const [loading, setLoading] = useState(true)
+    useEffect(() => {
+        setTimeout(() => setLoading(false), 5800)
+    }, [])
+    if (loading) {
+        return <Loading/>
+    }
     return (
         <div id="app">
             <BrowserRouter>
