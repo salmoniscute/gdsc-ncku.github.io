@@ -50,15 +50,17 @@
         line-height: 22px;
         letter-spacing: 0.1em;
 
-        width: 203px;
+        width: auto;
         height: 31px;
         border-radius: 42px;
         border: 2px solid #676c72;
         margin-top: 0;
         margin-right: 20px;
+        
         display: inline-block;
         padding-top: 8px;
         padding-left: 30px;
+        padding-right: 30px;
         vertical-align: baseline;
     }
     .tag-block{
