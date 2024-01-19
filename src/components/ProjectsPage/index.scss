@@ -26,7 +26,7 @@
     .banner {
         position: relative;
         width: calc(min(90vw, 1200px, 70rem) - 4rem);
-        min-height: calc((min(90vw, 1200px, 70rem)) / 3);
+        min-height: calc((min(60vw, 1200px, 70rem)) / 3);
         margin: 3.4rem 0;
         padding: 2rem;
         color: #FFF;
@@ -196,17 +196,28 @@
 
 @media (max-aspect-ratio: 1/1) {
     #projects {
+        .banner {
+            padding-bottom: 0rem; 
+            padding-top: 4rem;
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
         .banner .context {
             position: static;
             // bottom: 1rem;
             // left: 1.5rem;
             padding: 0.25rem;
             background-color: #2B2B2BA0;
+            h5 {
+                font-size: 24px;
+            }
             > div {
                 width: calc(100% + 0.5rem);
             }
         }
-        
+        .normal {
+            font-size: 12px;
+        }
         .selectedWork > .box {
             > .content {
                 flex-direction: column-reverse;

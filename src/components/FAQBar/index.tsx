@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-import './index.css';
+import './index.scss';
 
 import { IoIosArrowDown } from "react-icons/io";
 
@@ -35,9 +35,10 @@ export default function FAQBar(): React.ReactElement {
   };
   return (
     <div className="faq">
+      <h1>FAQ</h1>
       {data.map((item, index) => (
-        <div onClick={() => showDetail(index)}>
-          <div className='title'>
+        <div onClick={() => showDetail(index)} className='question'>
+          <div className='faq-title'>
             <h2>{item.title}</h2>
             <IoIosArrowDown className={`rotate-icon ${isRotated[index] ? 'rotated' : ''}`} />
           </div>
