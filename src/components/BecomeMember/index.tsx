@@ -72,7 +72,7 @@ export default function Home(): React.ReactElement {
             {
             ConditionList.map((item, index) => (
                 <div>
-                    <div className="title">如何成為 <span className={posClass[index]}>{item.Position}</span>？</div>
+                    <div className="classtitle">如何成為 <span className={posClass[index]}>{item.Position}</span>？</div>
                     <div className="content">
                         {item.Description}
                         <ul>
@@ -86,7 +86,7 @@ export default function Home(): React.ReactElement {
             ))  
             }
             
-            <div className="title">無法加入成員怎麼辦？</div>
+            <div className="classtitle">無法加入成員怎麼辦？</div>
             <div className="content">
                 別擔心！我們會有許多公開的活動與社課，就算不是社員也能參加喔！只要進入我們的 <a href="https://gdsc.community.dev/national-cheng-kung-university/" target='blank'>活動報名平台</a>，點選 "Join us" 即可加入平台會員。每當有活動要舉辦時就會第一時間通知你，在活動頁點選 RSVP 就算報名成功喔！
                 <div>（當然還是有一些活動是僅限社員參與的唷…😝）</div>
