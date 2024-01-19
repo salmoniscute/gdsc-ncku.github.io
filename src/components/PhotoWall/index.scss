@@ -1,7 +1,6 @@
 .photo-wall {
     position: relative;
-    width: 90vw;
-    max-width: 1200px;
+    max-width: 90vw;
     margin: 40px auto;
     img {
         width: 100%;
@@ -34,5 +33,16 @@
         max-height: 370px;
         object-fit: cover;
         object-position: center;
+    }
+    @media (max-width: 768px) {
+        button {
+            padding: 2px 20px; 
+        }
+        .buttons {
+            bottom: 10px;
+        }
+        .banner img {
+            max-height: 200px;
+        }
     }
 }
