@@ -16,7 +16,7 @@ export default function Event(): React.ReactElement {
                 <RecentEvent event_num={0}/>
             </div>
 
-            <h5 className="bold">行事曆</h5>
+            {/* <h5 className="bold">行事曆</h5>
             <div className="calendar">
                 <iframe
                     src="https://calendar.google.com/calendar/embed?src=c_c1282d53761f762b713c492f8a8b70ebf9aed7213851ad54871551d95df6e64f%40group.calendar.google.com&ctz=Asia%2FTaipei"
@@ -31,7 +31,7 @@ export default function Event(): React.ReactElement {
             <YearEvent image={SolutionChallenge} borderColor="#EA4336" name="Solution Challenge" infor="第一屆NCKU GDSC的成果發表會在國立成功大學總圖書館盛大舉辦。
                 匯集NLP, Flutter, 演算法視覺化, 網頁程式開發等多樣主題。" />
             <YearEvent image={StudyJam} borderColor="#34A852" name="Cloud Study Jam" infor="第一屆NCKU GDSC的成果發表會在國立成功大學總圖書館盛大舉辦。
-                匯集NLP, Flutter, 演算法視覺化, 網頁程式開發等多樣主題。" />
+                匯集NLP, Flutter, 演算法視覺化, 網頁程式開發等多樣主題。" /> */}
 
 
         </div>

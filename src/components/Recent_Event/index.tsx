@@ -76,28 +76,31 @@ export default function RecentEvent(props:any): React.ReactElement {
     
     return (
         <div id="recent-event">
+            
             <div className='recent-event-block'>
-                <div className='avatar-block'>
-                    <img className='avatar' src={picture} ></img>
-                </div>
-                <div className='content-block'>
                 <div className='tag-block'>
                 <div className='tag' >Career Development</div>
                 <div className='tag' >實體活動</div>
                 </div>
-                
-                <p className='topic'>{event_title}</p>
-                <p className='time'>{start_date} ~ {end_date}</p>
-                <p className='location'>{venue_name} {venue_city} {venue_address}</p>
-                <p className='introduction'>{description_short}</p>
-                
-                <div className='button-block'>
-                    <button className='join' onClick={joinClick}>立即加入</button>
-                    <button className='addtocalendar' onClick={addtocalendarClick}>加入行事曆</button>
-                </div>
+
+                <div className='content-block'>
+                    <div className='avatar-block'>
+                        <img className='avatar' src={picture} ></img>
+                    </div>   
+                    <div className='string-content-block'>
+                    <p className='topic'>{event_title}</p>
+                    <p className='time'>{start_date} ~ {end_date}</p>
+                    <p className='location'>{venue_name} {venue_city} {venue_address}</p>
+                    <p className='introduction'>{description_short}</p>
+                    
+                    <div className='button-block'>
+                        <button className='join' onClick={joinClick}>立即加入</button>
+                        <button className='addtocalendar' onClick={addtocalendarClick}>加入行事曆</button>
+                    </div>
+                    </div>
                 </div>
             </div>
-
+            
         </div>
     );
 }
