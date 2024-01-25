@@ -79,7 +79,7 @@ export default function Home(): React.ReactElement {
                 <div className="floating-text text6">Web Dev</div>
             </div>
             <FAQBar />
-            <div className="card">
+            <div className="logocard">
                 <div className="logo">
                     <img src= {logo} />
             </div>

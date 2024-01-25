@@ -89,11 +89,24 @@ p{
   transition: background-color 0.3s ease;
 }
 
-.logo{
-  width: 35%;
-  height: 300px;
-  margin-left: 30%;
+.logocard{
+  display: flex;
+  border-radius: 20px;
+  overflow: hidden;
+  --margin: calc((100vw - min(95vw, 1200px)) / 2);
+  width: calc(100vw - 2 * var(--margin));
+  margin: var(--margin);
+  margin-top: 0%;
+  margin-bottom: 0%;
+  align-items: center;
+  justify-content: center;
 }
+
+.logo img {
+  width: 100%; 
+  height: auto; 
+}
+
 
 .flowtext{
   height: 700px;
@@ -138,12 +151,26 @@ p{
   .card {
     flex-direction: column;
     flex-wrap: wrap;
+    align-items: center;
   }
 
   .right, .imgright, .imgmiddle {
     width: 100%;
     margin-top: 0;
     flex-wrap: wrap;
+  }
+
+  .left{
+    height: 500px;
+  }
+
+  .imgmiddle{
+    height: 500px;
+  }
+
+  .imgright{
+    height: 300px;
+    padding-right: 50px;
   }
 
   .ytvideo {
@@ -167,10 +194,6 @@ p{
   }
 
   .mleft{
-    width: 100%;
-  }
-
-  .logo{
     width: 100%;
   }
 }
