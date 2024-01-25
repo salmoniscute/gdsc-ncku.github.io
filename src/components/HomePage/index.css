@@ -1,13 +1,19 @@
 .title {
     width: 70%;
-    padding-left: 100px;
     background-color: #fff;
 }
+
 
 .card{
    display: flex;
    border-radius: 20px;
    overflow: hidden;
+   --margin: calc((100vw - min(95vw, 1200px)) / 2);
+   width: calc(100vw - 2 * var(--margin));
+   margin: var(--margin);
+   margin-top: 0%;
+   margin-bottom: 0%;
+   align-items: center;
 }
 
 .right{
@@ -23,49 +29,66 @@
     margin-top: 60%; 
     margin-left: 40%;
   }
-
-.middle{
-    width: 25%;
-    height: 800px;
-    padding: 20px;
-    background-color: #fff;
+  
+  .mleft h5, .mleft h6, .mleft p, .mleft a {
+    margin-bottom: 0.5em; 
   }
+  
+
 .imgright{
     width: 25%;
     height: 800px;
     background-color: #fff;
-    position:absolute;top:1850px;left:1150px;
+    margin-left: 5%;
+    margin-top: 30%;
   }
 
 .imgmiddle{
     width: 25%;
     height: 800px;
-    padding: 20px;
     background-color: #fff;
-    position:absolute;top:1700px;left:800px;
+    margin-left: 5%;
+    margin-top: 15%;
   }
 
 
 .left{
-    width: 40%;
+    width: 45%;
     height: 700px;
-    padding: 20px;
-    padding-left: 100px;
+    box-sizing: border-box;
     background-color: #fff;
   }
 
 .mleft{
-    width: 35%;
-    height: 1000px;
-    padding: 20px;
-    padding-left: 100px;
+    width: 40%;
+    height: 900px;
     background-color: #fff;
+    line-height: 1;
   }
+
 
 p{
   font-size: large;
-
 }
+
+.button-container {
+  margin-top: 30px;
+}
+
+.buttonla {
+  display: inline-block;
+  padding: 10px 30px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  background-color: #fff; 
+  color: #007BFF; 
+  border-radius: 20px;
+  border: 2px solid #0056b3; 
+  transition: background-color 0.3s ease;
+}
+
 .logo{
   width: 35%;
   height: 300px;
@@ -73,7 +96,7 @@ p{
 }
 
 .flowtext{
-  height: 900px;
+  height: 700px;
   position:relative;
 }
 
@@ -108,5 +131,46 @@ p{
   }
   50% {
     transform: translateY(-20px);
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .right, .imgright, .imgmiddle {
+    width: 100%;
+    margin-top: 0;
+    flex-wrap: wrap;
+  }
+
+  .ytvideo {
+    margin-top: 0;
+    margin-left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .title {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  p{
+    font-size: small;
+  }
+
+  .left{
+    width: 100%;
+  }
+
+  .mleft{
+    width: 100%;
+  }
+
+  .logo{
+    width: 100%;
   }
 }
