@@ -4,19 +4,19 @@
     .year-selector {
         display: flex;
         align-items: center;
-        gap: 2em;
+        gap: 3vw;
         div {
-            width: 11.5rem;
-            height: 3.5rem;
+            width: min(25vw, 11.5rem);
+            height: min(8vw, 3.5rem);
             border: 2px solid #4386f5;
             border-radius: 42px;
             transition: background-color 0.5s, color 0.5s;
             cursor: pointer;
             color: #4386f5;
             font-family: Jost;
-            font-size: 1.5rem;
+            font-size: min(3.5vw, 1.5rem);
             font-weight: 500;
-            line-height: 3.5rem;
+            line-height: min(8vw, 3.5rem);
             text-align: center;
         }
         div[data-selected="true"] {
@@ -28,21 +28,21 @@
         width: 10rem;
         height: 3.5rem;
         color: #1a1a1c;
-        font-size: 2.25rem;
+        font-size: min(7vw, 2.25rem);
     }
     .members {
         display: flex;
         align-items: center;
         justify-content: space-between;
         flex-wrap: wrap;
-        gap: 1.5em;
+        gap: 3vw;
 
         .member-card-0,
         .member-card-1,
         .member-card-2 {
             display: flex;
             width: 35rem;
-            height: 21.5rem;
+            height: min(21.5rem, 50vw);
             align-items: center;
             justify-content: space-evenly;
             border-radius: 20px;
@@ -50,36 +50,40 @@
 
             .member-photo {
                 width: 32.5%;
-                height: 13rem;
+                height: 60%;
             }
             .member-data {
                 display: flex;
-                width: 45%;
-                height: 14.5rem;
+                width: 50%;
+                height: 70%;
                 flex-direction: column;
                 justify-content: space-between;
 
                 p {
-                    margin: 0px;
+                    height: 10%;
+                    margin: 0;
                     font-weight: 500;
                     letter-spacing: 0.1em;
-                    line-height: 23px;
+                    font-size: min(2.5vw, 1rem);
                 }
                 #member-name {
-                    font-size: 1.45rem;
+                    height: 15%;
+                    font-size: min(3.5vw, 1.5rem);
                 }
                 #member-introduction {
-                    max-height: 4.5rem;
+                    height: 20%;
                     color: #5f6367;
                     font-weight: 400;
                     overflow-y: auto;
+                    overflow-wrap: break-word;
                 }
                 #icon {
                     display: flex;
-                    gap: 1.5rem;
+                    height: 15%;
+                    gap: min(3vw, 1.5rem);
                     .icon {
-                        width: 1.75rem;
-                        height: 1.75rem;
+                        width: min(5vw, 1.75rem);
+                        height: min(5vw, 1.75rem);
                     }
                 }
                 a[href=""] {
@@ -95,7 +99,7 @@
         }
         .member-card-0:hover {
             width: 34.5rem;
-            height: 21rem;
+            height: min(21rem, 48vw);
             border: 5px solid #ea4336;
             transition: border 0.3s;
         }
@@ -107,7 +111,7 @@
         }
         .member-card-1:hover {
             width: 34.5rem;
-            height: 21rem;
+            height: min(21rem, 48vw);
             border: 5px solid #34a852;
             transition: border 0.3s;
         }
@@ -119,7 +123,7 @@
         }
         .member-card-2:hover {
             width: 34.5rem;
-            height: 21rem;
+            height: min(21rem, 48vw);
             border: 5px solid #faab00;
             transition: border 0.3s;
         }
