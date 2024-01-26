@@ -9,20 +9,20 @@ import image2 from "../../assets/page2.png";
 import image3 from "../../assets/page3.png";
 import earth from "../../assets/gdsc_earth.gif";
 import logo from "../../assets/gdsc_logo.gif";
-
+import RecentEvent from "../Recent_Event";
 
 export default function Home(): React.ReactElement {
     return (
-    <div id="project"> 
+    <div id="home"> 
         <div>
-            <div className="card">
+            <div className="card1">
             <div className = "title"> 
                 <h3>國立成功大學 </h3> 
                 <h3>Google 學生開發者社群</h3>
             </div>
                 <img src= {earth}  style={{ maxWidth: '40%', height: '40%' }}/>
             </div>
-            <div className= "card"> 
+            <div className= "card2"> 
             <div className = "left">
                 <h5> 我們是誰？</h5>
                 <p> GDSC 是一個由 Google 支持的學生社群計畫，期望能鼓勵學生們學習與應用 Google 技術，並提供成員們資源協助以及和專家互動交流的機會。</p>
@@ -40,7 +40,7 @@ export default function Home(): React.ReactElement {
                 </div>
             </div>
          </div>
-            <div className= "card"> 
+            <div className= "card2"> 
             <div className = "mleft">
             <h5> 我們在做些什麼？</h5>
                <h6>課程活動</h6> 
@@ -67,6 +67,12 @@ export default function Home(): React.ReactElement {
                 <img src= {image3} style={{ maxWidth: '100%', height: 'auto' }}/>
             </div>
          </div>
+         <div>
+            <h5 className="bold">近期活動</h5>
+            <RecentEvent event_num={0}/>
+
+         </div>
+         
             <div className="flowtext">
                 <div className  ="main-text">
                 加入我們！ <br></br>和來自不同領域的夥伴做些有趣的事。
