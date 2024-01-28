@@ -74,7 +74,7 @@
 
 .mleft{
     width: 40%;
-    height: 750px;
+    height: 780px;
     background-color: #fff;
     line-height: 1;
   }
@@ -164,10 +164,14 @@ p{
 }
 
 @media (max-width: 768px) {
-  .card {
+  .card1 , .card2{
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
+  }
+ 
+  .card1 img{
+    display:none;
   }
 
   .right, .imgright, .imgmiddle {
@@ -181,24 +185,39 @@ p{
   }
 
   .imgmiddle{
-    height: 500px;
+    height: 300px;
+    flex-direction: row;
   }
 
   .imgright{
     height: 300px;
     padding-right: 50px;
+    flex-direction: row;
+  }
+
+  .imgmiddle img{
+    width: 50%;
+  }
+
+  .imgright img{
+    width: 60%;
+    margin-left: 20%;
   }
 
   .ytvideo {
     margin-top: 0;
     margin-left: 0;
     width: 100%;
-    height: 100%;
+    height: 80%;
   }
 
   .title {
     width: 100%;
     font-size: 14px;
+  }
+
+  .bold {
+    max-width: 100%;
   }
 
   p{
@@ -211,5 +230,6 @@ p{
 
   .mleft{
     width: 100%;
+    height: 100%;
   }
 }
