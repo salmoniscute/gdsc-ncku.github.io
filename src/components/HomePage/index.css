@@ -5,7 +5,7 @@
 
 }
 
-.title {
+.hometitle {
     width: 70%;
     background-color: #fff;
 }
@@ -166,7 +166,6 @@ p{
 @media (max-width: 768px) {
   .card1 , .card2{
     flex-direction: column;
-    flex-wrap: wrap;
     align-items: center;
   }
  
@@ -185,14 +184,17 @@ p{
   }
 
   .imgmiddle{
-    height: 300px;
+    margin-top: 10%;
+    height: 150px;
     flex-direction: row;
+    margin-left: 0%;
   }
 
   .imgright{
-    height: 300px;
+    height: 200px;
     padding-right: 50px;
     flex-direction: row;
+    margin-bottom: 10%;
   }
 
   .imgmiddle img{
@@ -207,17 +209,26 @@ p{
   .ytvideo {
     margin-top: 0;
     margin-left: 0;
+    margin-bottom: 10%;
     width: 100%;
-    height: 80%;
+    height: calc((min(90vw, 1200px, 70rem))/1.5);
   }
 
-  .title {
+  .hometitle {
     width: 100%;
-    font-size: 14px;
+  }
+  .hometitle h3{
+    font-size: x-large;
+  }
+  .left h5{
+    font-size: larger;
   }
 
   .bold {
     max-width: 100%;
+  }
+  .homeRecentEvent h5{
+    font-size: larger;
   }
 
   p{
@@ -226,10 +237,67 @@ p{
 
   .left{
     width: 100%;
+    height: 100%;
+    margin-bottom: 10%;
   }
 
   .mleft{
     width: 100%;
     height: 100%;
   }
+
+  .mleft h5{
+    font-size: larger;
+  }
+  .mleft h6{
+    font-size: medium;
+  }
+
+  .right{
+    height: 95%;
+    margin-bottom: 5%;
+  }
+
+  .buttonla{
+    width: 80px;
+    font-size: small;
+    gap: 0.2em;
+    height: 2rem;
+    padding: 0 1em;
+  }
+
+  .main-text {
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 16px;
+  }
+  
+  .floating-text {
+    font-size: 14px;
+  }
+  .text1 { bottom: 85%; left: 10%; }
+  .text2 { top: 20%; left: 55%;}
+  .text3 { top: 60%; left: 40%;  }
+  .text4 { bottom: 30%; left: 85%;}
+  .text5 { top: 70%; left: 20%;}
+  .text6 { bottom: 35%; left: 5%;  }
+
+  .flowtext{
+    margin-top: 20%;
+    margin-bottom: 10%;
+    height: 200px;
+  }
+
+  .logocard{
+    margin-top: 20%;
+  }
+  
+  .logo img {
+    width: 50%; 
+    height: auto; 
+    margin-left: 25%;
+
+  }
+  
 }

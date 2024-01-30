@@ -70,6 +70,10 @@
             .toggleMenu:last-child[data-open=true] {
                 margin-bottom: calc(2em * (var(--rows) + 1));
             }
+            .normal{
+                font-size: large;
+            }
+           
         }
         .moblieMenu {
             position: relative;

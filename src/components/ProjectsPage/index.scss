@@ -4,28 +4,29 @@
     margin: auto;
     .selector {
         display: flex;
-        gap: 2em;
         align-items: center;
+        gap: 3vw;
         div {
-            width: 11.5rem;
-            height: 3.5rem;
-            line-height: 3.5rem;
-            text-align: center;
-            color: #4386F5;
-            border: 2px solid #4386F5;
-            border-radius: 1.75rem;
+            width: min(25vw, 11.5rem);
+            height: min(8vw, 3.5rem);
+            border: 2px solid #4386f5;
+            border-radius: 42px;
             transition: background-color 0.5s, color 0.5s;
-            user-select: none;
             cursor: pointer;
+            color: #4386f5;
+            font-family: Jost;
+            font-size: min(3.5vw, 1.5rem);
+            font-weight: 500;
+            line-height: min(8vw, 3.5rem);
+            text-align: center;
         }
         div[data-selected="true"] {
-            color: #FFF;
-            background-color: #4386F5;
+            color: #fff;
+            background-color: #4386f5;
         }
     }
     .banner {
         position: relative;
-        width: calc(min(90vw, 1200px, 70rem) - 4rem);
         min-height: calc((min(60vw, 1200px, 70rem)) / 3);
         margin: 3.4rem 0;
         padding: 2rem;
@@ -196,6 +197,9 @@
 
 @media (max-aspect-ratio: 1/1) {
     #projects {
+        h3{
+            font-size: x-large;
+        }
         .banner {
             padding-bottom: 0rem; 
             padding-top: 4rem;
@@ -209,7 +213,7 @@
             padding: 0.25rem;
             background-color: #2B2B2BA0;
             h5 {
-                font-size: 24px;
+                font-size: 18px;
             }
             > div {
                 width: calc(100% + 0.5rem);
@@ -219,11 +223,34 @@
             font-size: 12px;
         }
         .selectedWork > .box {
+            max-width: calc(min(90vw, 1200px) - 5rem);
+            width: 65rem;
+            padding: 2rem 2rem 2rem 2rem;
+            border-radius: 1rem;
+            h5{
+                font-size: large;
+            }
+            .close{
+                top: 1rem;
+                right: 0.8rem;
+                height: 1.5rem;
+                width: 1.5rem;
+                line-height: 1.5rem;
+                text-align: center;
+                font-weight: 900;
+                font-size: 1rem;
+                border: 0.2rem solid #000;
+                border-radius: 50%;
+
+            }
             > .content {
                 flex-direction: column-reverse;
                 height: 29.5rem;
                 .intro {
                     height: 16.5rem;
+                }
+                .small{
+                    font-size: smaller;
                 }
                 .imgBlock {
                     height: 12rem;
@@ -235,6 +262,12 @@
                         height: 100%;
                         margin-left: 0;
                     }
+                }
+                .links{
+                    font-size: x-small;
+                }
+                .tags{
+                    font-size: x-small;
                 }
             }
         }
