@@ -16,8 +16,8 @@ export default function Home(): React.ReactElement {
     <div id="home"> 
         <div>
             <div className="card1">
-            <div className = "title"> 
-                <h3>國立成功大學 </h3> 
+            <div className = "hometitle"> 
+                <h3 >國立成功大學 </h3> 
                 <h3>Google 學生開發者社群</h3>
             </div>
                 <img src= {earth}  style={{ maxWidth: '40%', height: '40%' }}/>
@@ -67,8 +67,8 @@ export default function Home(): React.ReactElement {
                 <img src= {image3} style={{ maxWidth: '100%', height: 'auto' }}/>
             </div>
          </div>
-         <div>
-            <h5 className="bold">近期活動</h5>
+         <div className="homeRecentEvent">
+            <h5 >近期活動</h5>
             <RecentEvent event_num={0}/>
 
          </div>
