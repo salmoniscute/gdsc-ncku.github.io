@@ -14,61 +14,6 @@ export const data: {
         members: Array<Member>;
     };
 } = {
-    "2022-2023": {
-        members: [
-            {
-                photo: `${process.env.PUBLIC_URL}/img/teams/2022-2023/葉人豪 Huckle Yeh.jpg`,
-                name: "葉人豪 Huckle Yeh",
-                jobTitle: "Lead",
-                department: "電機工程學系 114級",
-                introduction: "Live a life that you will remember!",
-                instagram: "https://www.instagram.com/hhjj55013/",
-                github: "https://github.com/hhjj55013",
-                linkedin: "https://www.linkedin.com/in/%E4%BA%BA%E8%B1%AA-%E8%91%89-950057243/",
-            },
-            {
-                photo: `${process.env.PUBLIC_URL}/img/teams/2022-2023/Yu-Chen Chan.png`,
-                name: "Yu-Chen Chan",
-                jobTitle: "總務",
-                department: "資訊工程學系 113級",
-                introduction: "A",
-                instagram: "",
-                github: "https://github.com/TCFSH69",
-                linkedin: "https://www.linkedin.com/in/yu-chen-chan-3b4b60226/",
-            },
-            {
-                photo: `${process.env.PUBLIC_URL}/img/teams/2022-2023/劉育瑄 Jenny Liu.jpg`,
-                name: "劉育瑄 Jenny Liu",
-                jobTitle: "公關部 部長",
-                department: "資訊工程研究所 113級",
-                introduction: "Enrich your life!",
-                instagram: "https://www.instagram.com/jenny.liu_1116/",
-                github: "https://github.com/Niomoo",
-                linkedin: "https://www.linkedin.com/in/jenny-liu-lyh/",
-            },
-            {
-                photo: `${process.env.PUBLIC_URL}/img/teams/2022-2023/何寬羿 Kevin.jpg`,
-                name: "何寬羿 Kevin",
-                jobTitle: "跨平台 APP 組 組長",
-                department: "資訊工程學系 114級",
-                introduction: "",
-                instagram: "",
-                github: "",
-                linkedin: "",
-            },
-            {
-                photo: `${process.env.PUBLIC_URL}/img/teams/2022-2023/王第一 WangFirst.png`,
-                name: "王第一 WangFirst",
-                jobTitle: "Unity 遊戲開發組 組長",
-                department: "光電系 112級",
-                introduction: "遊戲設計師兼繪師兼音樂家兼光學工程師兼教師兼藝術家。",
-                instagram: "https://www.instagram.com/wangstarfirst/",
-                github: "https://github.com/WangStarFirst",
-                linkedin: "https://www.linkedin.com/in/%E5%B4%87%E5%AE%89-%E7%8E%8B-67211019b/",
-            },
-            
-        ],
-    },
     "2023-2024": {
         members: [
             {
@@ -110,7 +55,8 @@ export const data: {
                 introduction: "如果看見地獄，我就不怕魔鬼",
                 instagram: "https://www.instagram.com/fyh_kevin/",
                 github: "",
-                linkedin: "https://www.linkedin.com/in/kai-yue-huang-277591267/",
+                linkedin:
+                    "https://www.linkedin.com/in/kai-yue-huang-277591267/",
             },
             {
                 photo: `${process.env.PUBLIC_URL}/img/teams/2023-2024/許晏綾 YeyeLeaf.png`,
@@ -147,8 +93,10 @@ export const data: {
                 name: "游舒淳 Minnie Yu",
                 jobTitle: "設計部 部員",
                 department: "工業設計學系 114級",
-                introduction: "嗨～我是游舒淳，專長是平面和產品設計，請多多指教～",
-                instagram: "https://instagram.com/yushuchuen?igshid=YTQwZjQ0NmI0OA%3D%3D&utm_source=qr",
+                introduction:
+                    "嗨～我是游舒淳，專長是平面和產品設計，請多多指教～",
+                instagram:
+                    "https://instagram.com/yushuchuen?igshid=YTQwZjQ0NmI0OA%3D%3D&utm_source=qr",
                 github: "",
                 linkedin: "",
             },
@@ -157,18 +105,23 @@ export const data: {
                 name: "陳莉臻 Lili",
                 jobTitle: "設計部 部員",
                 department: "資訊工程學系 115級",
-                introduction: "UI/UX新手，向大大們努力學習ˋˏ  👣 ˎˊ .ᐟ‪‪.ᐟ好多好多想做的事，喜歡躺在星空下和高山草原",
-                instagram: "https://instagram.com/liliii__88?igshid=NGVhN2U2NjQ0Yg%3D%3D&utm_source=qr",
+                introduction:
+                    "UI/UX新手，向大大們努力學習ˋˏ  👣 ˎˊ .ᐟ‪‪.ᐟ好多好多想做的事，喜歡躺在星空下和高山草原",
+                instagram:
+                    "https://instagram.com/liliii__88?igshid=NGVhN2U2NjQ0Yg%3D%3D&utm_source=qr",
                 github: "https://github.com/LileeeC",
-                linkedin: "https://www.linkedin.com/in/%E8%8E%89%E8%87%BB-%E9%99%B3-85577a296?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+                linkedin:
+                    "https://www.linkedin.com/in/%E8%8E%89%E8%87%BB-%E9%99%B3-85577a296?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
             },
             {
                 photo: `${process.env.PUBLIC_URL}/img/teams/2023-2024/徐名萱(橘子).jpg`,
                 name: "徐名萱(橘子)",
                 jobTitle: "設計部 部員",
                 department: "工業設計學系 113級",
-                introduction: "ENFP~沒有很E但是很NP(想法很跳躍、做事很彈性的意思) 喜歡做比較跳脫框架的設計，喜歡吃甜的，喜歡野餐，喜歡看殭屍片，喜歡奇怪又可愛的東西~",
-                instagram: "https://instagram.com/kjasminss?igshid=OGQ5ZDc2ODk2ZA==",
+                introduction:
+                    "ENFP~沒有很E但是很NP(想法很跳躍、做事很彈性的意思) 喜歡做比較跳脫框架的設計，喜歡吃甜的，喜歡野餐，喜歡看殭屍片，喜歡奇怪又可愛的東西~",
+                instagram:
+                    "https://instagram.com/kjasminss?igshid=OGQ5ZDc2ODk2ZA==",
                 github: "",
                 linkedin: "",
             },
@@ -227,7 +180,8 @@ export const data: {
                 name: "銀絲卷",
                 jobTitle: "公關部 部員",
                 department: "工業與資訊管理學系 114級",
-                introduction: "大家好～我是工資系大三，希望可以成為一名前端開發工程師",
+                introduction:
+                    "大家好～我是工資系大三，希望可以成為一名前端開發工程師",
                 instagram: "",
                 github: "https://github.com/shixuanLin1009",
                 linkedin: "",
@@ -247,8 +201,10 @@ export const data: {
                 name: "李緒成",
                 jobTitle: "GCP 組長",
                 department: "資訊工程學系 115級",
-                introduction: "目前就讀成大資工系大二, 興趣是聽音樂, 因為不會用樂器, 還有出去玩！ 上大學才接觸一點網頁開發的東西, 發現自己前端太爛所以只能往後端走qq, 會的東西還很少, 希望大家能多多指教～ 最近有點想當機師, 如果有知道怎麼當的話麻煩聯絡我",
-                instagram: "https://instagram.com/peter_lee0814?igshid=NzZlODBkYWE4Ng%3D%3D&utm_source=qr",
+                introduction:
+                    "目前就讀成大資工系大二, 興趣是聽音樂, 因為不會用樂器, 還有出去玩！ 上大學才接觸一點網頁開發的東西, 發現自己前端太爛所以只能往後端走qq, 會的東西還很少, 希望大家能多多指教～ 最近有點想當機師, 如果有知道怎麼當的話麻煩聯絡我",
+                instagram:
+                    "https://instagram.com/peter_lee0814?igshid=NzZlODBkYWE4Ng%3D%3D&utm_source=qr",
                 github: "https://github.com/peterxcli",
                 linkedin: "https://linkedin.com/",
             },
@@ -257,8 +213,10 @@ export const data: {
                 name: "施尚均 Finn",
                 jobTitle: "AI 人工智慧組 組長",
                 department: "電機工程學系 113級",
-                introduction: "小子，我最近正好有些不錯的模型要脫手，要不要試用看看",
-                instagram: "https://www.instagram.com/finn_ilda/?igshid=M2RkZGJiMzhjOQ%3D%3D",
+                introduction:
+                    "小子，我最近正好有些不錯的模型要脫手，要不要試用看看",
+                instagram:
+                    "https://www.instagram.com/finn_ilda/?igshid=M2RkZGJiMzhjOQ%3D%3D",
                 github: "",
                 linkedin: "",
             },
@@ -270,7 +228,8 @@ export const data: {
                 introduction: "嗨",
                 instagram: "https://www.instagram.com/yuchen170_/",
                 github: "https://github.com/yuchen170",
-                linkedin: "https://www.linkedin.com/in/yuchen170?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+                linkedin:
+                    "https://www.linkedin.com/in/yuchen170?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
             },
             {
                 photo: `${process.env.PUBLIC_URL}/img/teams/2023-2024/周穆可 Claire Chou.jpeg`,
@@ -278,7 +237,8 @@ export const data: {
                 jobTitle: "數據科學組 組長",
                 department: "政治學系 112級",
                 introduction: "吃一個甜點心情還是不好嗎？那就吃兩個",
-                instagram: "https://instagram.com/claire_chou_18?igshid=M2RkZGJiMzhjOQ%3D%3D&utm_source=qr",
+                instagram:
+                    "https://instagram.com/claire_chou_18?igshid=M2RkZGJiMzhjOQ%3D%3D&utm_source=qr",
                 github: "",
                 linkedin: "http://linkedin.com/in/mu-ko-chou",
             },
@@ -301,6 +261,63 @@ export const data: {
                 instagram: "",
                 github: "https://github.com/wayneouow",
                 linkedin: "",
+            },
+        ],
+    },
+    "2022-2023": {
+        members: [
+            {
+                photo: `${process.env.PUBLIC_URL}/img/teams/2022-2023/葉人豪 Huckle Yeh.jpg`,
+                name: "葉人豪 Huckle Yeh",
+                jobTitle: "Lead",
+                department: "電機工程學系 114級",
+                introduction: "Live a life that you will remember!",
+                instagram: "https://www.instagram.com/hhjj55013/",
+                github: "https://github.com/hhjj55013",
+                linkedin:
+                    "https://www.linkedin.com/in/%E4%BA%BA%E8%B1%AA-%E8%91%89-950057243/",
+            },
+            {
+                photo: `${process.env.PUBLIC_URL}/img/teams/2022-2023/Yu-Chen Chan.png`,
+                name: "Yu-Chen Chan",
+                jobTitle: "總務",
+                department: "資訊工程學系 113級",
+                introduction: "A",
+                instagram: "",
+                github: "https://github.com/TCFSH69",
+                linkedin: "https://www.linkedin.com/in/yu-chen-chan-3b4b60226/",
+            },
+            {
+                photo: `${process.env.PUBLIC_URL}/img/teams/2022-2023/劉育瑄 Jenny Liu.jpg`,
+                name: "劉育瑄 Jenny Liu",
+                jobTitle: "公關部 部長",
+                department: "資訊工程研究所 113級",
+                introduction: "Enrich your life!",
+                instagram: "https://www.instagram.com/jenny.liu_1116/",
+                github: "https://github.com/Niomoo",
+                linkedin: "https://www.linkedin.com/in/jenny-liu-lyh/",
+            },
+            {
+                photo: `${process.env.PUBLIC_URL}/img/teams/2022-2023/何寬羿 Kevin.jpg`,
+                name: "何寬羿 Kevin",
+                jobTitle: "跨平台 APP 組 組長",
+                department: "資訊工程學系 114級",
+                introduction: "",
+                instagram: "",
+                github: "",
+                linkedin: "",
+            },
+            {
+                photo: `${process.env.PUBLIC_URL}/img/teams/2022-2023/王第一 WangFirst.png`,
+                name: "王第一 WangFirst",
+                jobTitle: "Unity 遊戲開發組 組長",
+                department: "光電系 112級",
+                introduction:
+                    "遊戲設計師兼繪師兼音樂家兼光學工程師兼教師兼藝術家。",
+                instagram: "https://www.instagram.com/wangstarfirst/",
+                github: "https://github.com/WangStarFirst",
+                linkedin:
+                    "https://www.linkedin.com/in/%E5%B4%87%E5%AE%89-%E7%8E%8B-67211019b/",
             },
         ],
     },
