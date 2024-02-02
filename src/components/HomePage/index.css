@@ -152,7 +152,7 @@ p{
 .text3 { top: 60%; left: 50%; animation-delay: 1.5s; color: #ff0000; }
 .text4 { bottom: 20%; left: 65%; animation-delay: 2s; color: #05750f8a;}
 .text5 { top: 70%; left: 30%; animation-delay: 2.5s; color: #f7bb07;}
-.text6 { bottom: 40%; left: 20%; animation-delay: 3s; color: #14cbd8;}
+.text6 { bottom: 32%; left: 20%; animation-delay: 3s; color: #14cbd8;}
 
 @keyframes floatText {
   0%, 100% {
