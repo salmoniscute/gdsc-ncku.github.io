@@ -4,6 +4,10 @@ import logo from "../../logo.svg"
 
 import "./index.scss";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFacebook, faInstagram, faYoutube, faDiscord, faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faFileAlt } from "@fortawesome/free-solid-svg-icons";
+
 export default function Footer(): React.ReactElement {
     return (
         <div id="footer">
@@ -14,7 +18,24 @@ export default function Footer(): React.ReactElement {
                 <a href="mailto:GDSC.club@gs.ncku.edu.tw">GDSC.club@gs.ncku.edu.tw</a>
                 <p>國立成功大學 台灣台南市東區大學路1號</p>
                 <div className="footer-iconBar">
-                    {/* 忘記做了 先放著 */}
+                    <a href="https://discord.gg/3AgWYcZXZm" target="_blank" rel="noreferrer">
+                        <FontAwesomeIcon icon={faFacebook} className="icon"/>
+                    </a>
+                    <a href="https://www.instagram.com/gdsc.ncku" target="_blank" rel="noreferrer">
+                        <FontAwesomeIcon icon={faInstagram} className="icon"/>
+                    </a>
+                    <a href="https://www.youtube.com/@nckugdsc" target="_blank" rel="noreferrer">
+                        <FontAwesomeIcon icon={faYoutube} className="icon"/>
+                    </a>
+                    <a href="https://discord.com/" target="_blank" rel="noreferrer">
+                        <FontAwesomeIcon icon={faDiscord} className="icon"/>
+                    </a>
+                    <a href="https://github.com/gdsc-ncku" target="_blank" rel="noreferrer">
+                        <FontAwesomeIcon icon={faGithub} className="icon"/>
+                    </a>
+                    <a href="https://hackmd.io/@gdscncku" target="_blank" rel="noreferrer">
+                        <FontAwesomeIcon icon={faFileAlt} className="icon"/>
+                    </a>
                 </div>
             </div>
             <div className="footer-block">
@@ -35,6 +56,7 @@ export default function Footer(): React.ReactElement {
                 >Code of Conduct</a>
                 <h6>讓改變在校園裡發生！</h6>
             </div>
+
         </div>
     );
 }

@@ -17,8 +17,8 @@ export default function NavigateBar(): ReactElement {
                 <img src={logo} alt="logo" />
             </Link>
             <div className="menu">
-                <Link className="normal bold" to={"/events"}>Events</Link>
-                <Link className="normal bold" to={"/projects"}>Projects</Link>
+                <Link className="normal bold" to={"/events"} onClick={() => { setMenuStat(false); }}>Events</Link>
+                <Link className="normal bold" to={"/projects"} onClick={() => { setMenuStat(false); }}>Projects</Link>
                 <ToggleMenu
                     title="Teams"
                     titleClass="normal bold"
@@ -26,7 +26,7 @@ export default function NavigateBar(): ReactElement {
                         "歷屆團隊成員": "/teams",
                         "如何加入成員": "/join",
                     }}
-                    optionClass="normal"
+                    optionClass="normal" 
                 />
                 <ToggleMenu
                     title="Resources"
