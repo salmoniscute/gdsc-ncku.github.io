@@ -4,6 +4,13 @@ import "./index.scss";
 
 export default function RecentEvent(props:any): React.ReactElement {
     const moment = require('moment-timezone');
+    var currentDate = new Date()
+    var currentYear = currentDate.getFullYear();
+    var currentMonth = currentDate.getMonth();
+    var currentDay = currentDate.getDay();
+    var currentHours = currentDate.getHours();
+    var currentMinutes = currentDate.getMinutes();
+    var render_tag = false;
 
     var currntURL = "http://www.google.com/calendar/render?action=TEMPLATE&text=event&dates=[start]/[end]&details=description&location=[location]";
     let group_id = 1846;
@@ -37,6 +44,11 @@ export default function RecentEvent(props:any): React.ReactElement {
             const startDateShow = originalStart.format('MMMM Do YYYY, h:mm:ss a');
             const endDateString = originalEnd.format("YYYYMMDDTHHmmssSSSZ");
             const endDateShow = originalEnd.format('MMMM Do YYYY, h:mm:ss a');
+            var eventYear = endTimeStr.slice(0, 4);
+            var eventMonth = endTimeStr.slice(4, 6);
+            var eventDay = endTimeStr.slice(6, 8);
+            var eventHour = endTimeStr.slice(9, 11);
+            var eventMinute = endTimeStr.slice(11, 13);
 
             setEvent_title(response.data.results[props.event_num].title);
             setDescription_short(response.data.results[props.event_num].description_short);
@@ -62,6 +74,18 @@ export default function RecentEvent(props:any): React.ReactElement {
             .replace("[location]", response.data.results[props.event_num].venue_name)
             ;
             setEvent_URL(currntURL);
+
+            if(eventYear>currentYear){
+                if(eventMonth>currentMonth){
+                    if(eventDay>currentDay){
+                        if(eventHour>currentHours){
+                            if(eventMinute>currentMinutes){
+                                render_tag = true;
+                            }
+                        }
+                    }
+                }
+            }
         } 
         getEvent();
     },[]);
@@ -75,12 +99,13 @@ export default function RecentEvent(props:any): React.ReactElement {
     }
     
     return (
+        
         <div id="recent-event">
-            
+            {render_tag ? (
             <div className='recent-event-block'>
                 <div className='tag-block'>
                 <div className='tag' >Career Development</div>
-                <div className='tag' >實體活動</div>
+                <div className='tag' >{audience_type}</div>
                 </div>
 
                 <div className='content-block'>
@@ -100,7 +125,12 @@ export default function RecentEvent(props:any): React.ReactElement {
                     </div>
                 </div>
             </div>
-            
+            ) : (
+                <div className='recent-event-block'>
+                    <p className='topic'>No recent events</p>
+                </div>
+            )}
         </div>
+        
     );
 }
