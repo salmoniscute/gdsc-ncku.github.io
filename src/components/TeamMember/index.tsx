@@ -8,7 +8,7 @@ import { data, Member } from "./teamMemberData";
 
 export default function TeamMember(): ReactElement {
     const [selectedYear, setSelectedYear] = useState<string>(
-        Object.keys(data)[1]
+        Object.keys(data)[0]
     );
     return (
         <div id="team-member">

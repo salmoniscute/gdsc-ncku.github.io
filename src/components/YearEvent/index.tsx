@@ -19,7 +19,7 @@ const YearEvent: React.FC<YearEventProps> = ({ image, borderColor, name, infor ,
 
   return (
     <div id="yearEvent">
-      <a href={link} target="_blank" rel="noopener noreferrer">
+      <a href={link} target="_blank" style={{ textDecoration: 'none' }}>
         <div className="banner">
           <img alt="banner" src={image} style={divStyle}/>
           <div className="context">
